@@ -76,7 +76,7 @@ console.log(Vegitable.slice(-1)); //[ 'Bhindi' ]
 console.log(Vegitable.slice(Vegitable.length-1)); //[ 'Bhindi' ]
 
 
-//SPLICE (START,DELETE,ITEM No.)
+//SPLICE (START,DELETE,ITEM No.)  add, remove, or replace elements.It modifies the original array and returns the removed elements
 
 let colors = ['blue','green','black','yellow','orange','red','pink','brown'];
 
