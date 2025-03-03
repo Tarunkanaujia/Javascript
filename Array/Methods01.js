@@ -64,7 +64,43 @@ console.log(Drink);
               
 
 
-// SLICE : - Copies a portion of an Array
+// SLICE (START,END): - Copies a portion of an Array. Without modifying the original one.
 
 
-console.log(Vegitable.slice(2));
+console.log(Vegitable.slice());
+console.log(Vegitable.slice(2)); //  [ 'Gobhi', 'kaddu', 'Bhindi' ]
+console.log(Vegitable.slice(2,6));   // [ 'Gobhi', 'kaddu', 'Bhindi' ]
+
+
+console.log(Vegitable.slice(-1)); //[ 'Bhindi' ]
+console.log(Vegitable.slice(Vegitable.length-1)); //[ 'Bhindi' ]
+
+
+//SPLICE (START,DELETE,ITEM No.)
+
+let colors = ['blue','green','black','yellow','orange','red','pink','brown'];
+
+console.log(colors); 
+
+console.log("Right now the length of array is",colors.length); //  8
+
+
+console.log("Without passing any arugements in splice",colors.splice()); // We got empty Array
+
+// console.log("Passing starting arguement",colors.splice(1)); //['green','black','yellow','orange','red','pink','brown'] Here we got the deleted arr.
+
+console.log("what i goinh here",colors.splice(1,2)); // [ 'green', 'black' ] Same we got deleted arr.
+
+console.log(colors.length); //6
+
+console.log(colors); //
+
+
+
+
+
+
+
+
+
+
